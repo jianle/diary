@@ -19,7 +19,7 @@ scala是Martin Odersk于2001年开发，可用于大规模应用程序开发，�
 ---
 
 * 基本类型  
-![](../pictures/scala-2-0.jpg)
+![](../pictures/scala-2-0.jpg)  
 数据类型与JAVA一一对应，特点 **首字母大写**  
 
 * 运算符优先级  
