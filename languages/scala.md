@@ -29,6 +29,6 @@ scala是Martin Odersk于2001年开发，可用于大规模应用程序开发，�
 * 程序控制结构  
   * if
   * while
-  * Where
+  * where
   * do while
   * for
