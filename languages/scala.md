@@ -69,5 +69,5 @@ scala.collection.immutable类层次结构：
 scala.collection.mutable类层次结构：
 ![](/pictures/scala-4-2.jpg)  
 
-可变集合与不可变集合对应关系：
+可变集合与不可变集合对应关系：   
 ![](/pictures/scala-4-3.jpg)  
