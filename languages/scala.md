@@ -71,3 +71,26 @@ scala.collection.mutable类层次结构：
 
 可变集合与不可变集合对应关系：   
 ![](/pictures/scala-4-3.jpg)  
+
+[第五节 函数与闭包](https://yq.aliyun.com/articles/60389)  
+---
+#### 主要内容
+* 函数字面量（值函数）
+* 匿名函数
+* 函数的简化
+* 函数参数
+* 闭包
+
+
+#### 函数字面量
+
+指函数可以赋值给变量，函数形式如下  
+![](/pictures/scala-5-0.jpg)  
+
+#### 匿名函数
+
+```scala
+println(Array(1,2,3,4).map((x:Int)=>x+1).mkString(","))
+//简化
+println(Array(1,2,3,4).map(_+1).mkString(","))
+```
