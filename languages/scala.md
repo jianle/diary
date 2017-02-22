@@ -49,3 +49,25 @@ scala是Martin Odersk于2001年开发，可用于大规模应用程序开发，�
   * List一旦创建，不可改变
   * List伴生对象
   * List常用操作(`isEmpty`、`head`、`tail`、`last`、`reverse`、`drop`、`take`、`mkString`)
+
+[第四节 Set、Map、Tuple、队列操作实战](https://yq.aliyun.com/articles/60390)  
+---
+
+scala中所有集合都来自scala.collection包及其子包`mutable`(可变集合)、`immutable`(不可变集合)当中，scala默认使用`immutable`集合，如要使用`mutable`需要在程序中引入
+```  
+import scala.collection.mutable
+val mutableSet = mutable.Set(1, 2, 3)
+```
+
+scala.collection包中集合类层次结构：
+
+![](/pictures/scala-4-0.jpg)  
+
+scala.collection.immutable类层次结构：  
+![](/pictures/scala-4-1.jpg)  
+
+scala.collection.mutable类层次结构：
+![](/pictures/scala-4-2.jpg)  
+
+可变集合与不可变集合对应关系：
+![](/pictures/scala-4-3.jpg)  
