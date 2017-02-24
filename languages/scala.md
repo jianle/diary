@@ -108,5 +108,5 @@ convertIntToString: (f: Int => String)String
 
 闭包(Closure）
 
-(x:Int)=>x+more,这里面的more是一个自由变量（Free Variable）, more是一个没有给定含义的不定变量
+(x:Int)=>x+more,这里面的more是一个自由变量（Free Variable）, more是一个没有给定含义的不定变量  
 而x则的类型确定、值在函数调用的时候被赋值，称这种变量为绑定变量（Bound Variable）
