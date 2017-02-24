@@ -21,5 +21,9 @@ Java内存模型抽象示意图：
 <br/>线程A和线程B的通讯步骤：</br>
 ![](../pictures/java-jmm-2.png)
 * 重排序
+  * 编译器优化的重排序
+  * 指令级并行的重排序
+  * 内存系统的重排序
+![](../pictures/java-reorder.png)
 * 处理器重排序与内存屏障指令
 * Happens-before
