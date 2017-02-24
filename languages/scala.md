@@ -94,3 +94,19 @@ println(Array(1,2,3,4).map((x:Int)=>x+1).mkString(","))
 //简化
 println(Array(1,2,3,4).map(_+1).mkString(","))
 ```
+
+#### 函数参数
+
+```scala
+//函数参数(高阶函数）
+//((Int)=>String)=>String
+scala> def convertIntToString(f:(Int)=>String)=f(4)
+convertIntToString: (f: Int => String)String
+```
+
+#### 函数闭包
+
+闭包(Closure）
+
+(x:Int)=>x+more,这里面的more是一个自由变量（Free Variable）, more是一个没有给定含义的不定变量
+而x则的类型确定、值在函数调用的时候被赋值，称这种变量为绑定变量（Bound Variable）
