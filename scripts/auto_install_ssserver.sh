@@ -15,6 +15,7 @@ install_plugins() {
     apt-get install -y python-pip
     pip install shadowsocks
     apt-get install -y supervisor
+    echo "install plugins finished."
     exit 1
   else
     echo "Please use root."
@@ -42,7 +43,7 @@ EOF
 }
 
 ssupervisor() {
-  echo "start setp supervisor..."
+  echo "start setup supervisor..."
   [ ! -d "/etc/supervisor/conf.d" ] && mkdir -p /etc/supervisor/conf.d
   cat > /etc/supervisor/conf.d/ssserver.conf<<EOF
 [program:ssserver]
@@ -55,10 +56,15 @@ autorestart=true
 autostart=true
 EOF
   cat /etc/supervisor/conf.d/ssserver.conf
-
+  hasconf=$(grep "/etc/supervisor/conf.d/" /etc/supervisor/supervisord.conf | grep -v grep | wc -l)
+  if [ hasconf -ne 1 ]; then
+    echo "[include]" >> /etc/supervisor/supervisord.conf
+    echo "files = /etc/supervisor/conf.d/*.conf" >> /etc/supervisor/supervisord.conf
+  fi
+  echo "setup supervisor finished."
 }
 
-stepserver() {
+setupserver() {
   supervisorctl update
   supervisorctl stop ssserver
   supervisorctl start ssserver
