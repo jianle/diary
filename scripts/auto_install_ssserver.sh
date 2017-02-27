@@ -57,7 +57,7 @@ autostart=true
 EOF
   cat /etc/supervisor/conf.d/ssserver.conf
   hasconf=$(grep "/etc/supervisor/conf.d/" /etc/supervisor/supervisord.conf | grep -v grep | wc -l)
-  if [ hasconf -ne 1 ]; then
+  if [[ hasconf -ne 1 ]]; then
     echo "[include]" >> /etc/supervisor/supervisord.conf
     echo "files = /etc/supervisor/conf.d/*.conf" >> /etc/supervisor/supervisord.conf
   fi
@@ -70,3 +70,8 @@ setupserver() {
   supervisorctl start ssserver
 }
 
+
+install_plugins
+ssconfig
+ssupervisor
+setupserver
