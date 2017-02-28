@@ -6,7 +6,7 @@ JavaScript
 ---
 
 * JavaScript Design Patterns
-  * [Constructor Pattern](#constructor pattern)
+  * [Constructor Pattern](#constructor-pattern)
   * Module Pattern
   * Revealing Module Pattern
   * Singleton Pattern
@@ -27,7 +27,12 @@ Constructor Pattern
 * Dot syntax
 * Square bracket syntax
 * Object.defineProperty ( ECMAScript 5 only compatible approaches )  
-```javascript
+```javascript  
+var newObject = {};
+// or
+var newObject = Object.create( Object.prototype );
+// or
+var newObject = new Object();
 Object.defineProperty( newObject, "someKey", {
     value: "for more control of the property's behavior",
     writable: true,
