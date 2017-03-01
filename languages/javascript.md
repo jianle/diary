@@ -7,7 +7,7 @@ JavaScript
 
 * JavaScript Design Patterns
   * [Constructor Pattern](#constructor-pattern)
-  * Module Pattern
+  * [Module Pattern](#the-module-pattern)
   * Revealing Module Pattern
   * Singleton Pattern
   * Observer Pattern
@@ -21,9 +21,9 @@ JavaScript
   * Flyweight Pattern
 
 
-Constructor Pattern
----
-## Object Creation
+## Constructor Pattern
+
+#### Object Creation
 * Dot syntax
 * Square bracket syntax
 * Object.defineProperty ( ECMAScript 5 only compatible approaches )  
@@ -40,7 +40,7 @@ Object.defineProperty( newObject, "someKey", {
     configurable: true
 });
 ```
-## Basic Constructor
+#### Basic Constructor
 
 a basic constructor may look as follows:
 ```javascript
@@ -53,4 +53,20 @@ function Car(model, year, miles) {
   }
 }
 var civic = new Car( "Honda Civic", 2009, 20000 );
+```
+
+## The Module Pattern
+
+* AMD modules
+* CommonJS modules
+* ECMAScript Harmony modules
+
+####  Object Literals   
+```javascript
+var myObjectLiteral = {
+  variableKey: variableValue,
+  functionKey: function() {
+    // ...
+  }
+}
 ```
