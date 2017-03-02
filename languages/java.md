@@ -3,6 +3,7 @@ Contents
 
 * [Java Interviews](https://dongchuan.gitbooks.io/java-interview-question/content/)
 * <a href="#深入理解java内存模型">深入理解Java内存模型</a>
+* [JVM](#jvm)
 
 深入理解Java内存模型
 ===
