@@ -110,3 +110,51 @@ convertIntToString: (f: Int => String)String
 
 (x:Int)=>x+more,这里面的more是一个自由变量（Free Variable）, more是一个没有给定含义的不定变量  
 而x则的类型确定、值在函数调用的时候被赋值，称这种变量为绑定变量（Bound Variable）
+
+
+[第六节 类和对象（一）](https://yq.aliyun.com/articles/60388)
+--- 
+
+* 主要内容
+  * 类定义、创建对象
+  * 主构造器
+  * 辅助构造器
+
+[第七节 类和对象（二）](https://yq.aliyun.com/articles/60387)
+--- 
+
+* 主要内容
+  * 单例对象
+  * 伴生对象与伴生类
+  * apply方法
+  * 应用程序对象
+  * 抽象类
+
+
+伴生对象与伴生类：   
+
+```scala  
+class Student(var name:String,age:Int)
+
+object Student {
+  private var studentNo:Int=0;
+  def uniqueStudentNo()={
+    studentNo+=1
+    studentNo
+  }
+  def main(args: Array[String]): Unit = {
+    println(Student.uniqueStudentNo())
+  }
+}
+```
+
+apply方法： 
+```scala  
+val sets = List(1,2,3) 等同于下
+val sets = List.apply(1,2,3)
+```
+
+
+
+
+
