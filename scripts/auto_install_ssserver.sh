@@ -13,10 +13,10 @@ install_plugins() {
     apt-get install -y locales
     apt-get install -y vim
     apt-get install -y python-pip
+    pip install setuptools
     pip install shadowsocks
     apt-get install -y supervisor
     echo "install plugins finished."
-    exit 1
   else
     echo "Please use root."
     exit 1
@@ -34,8 +34,8 @@ ssconfig() {
 
   cat > /etc/ssserver/ss.conf<<EOF
 {
-    "server_port":${port}
-    "password":"${password}"
+    "server_port":${port},
+    "password":"${password}",
     "method":"aes-256-cfb"
 }
 EOF
