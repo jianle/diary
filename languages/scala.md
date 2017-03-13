@@ -229,6 +229,16 @@ object demo{
 }
 ```
 
+[第十节 Scala类层次结构、Traits初步](https://yq.aliyun.com/articles/60384)
+--- 
+
+* 主要内容
+  * scala类层次结构总览
+  * scala中原生类型的实现方式解析
+  * Nothing、Null类型解析
+  * Traits简介
+  * Traits几种不同使用方式
+
 
 
 
