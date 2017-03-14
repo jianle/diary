@@ -239,6 +239,17 @@ object demo{
   * Traits简介
   * Traits几种不同使用方式
 
+[第十一节 Trait进阶](https://yq.aliyun.com/articles/60383)
+---
+
+* 主要内容
+  * trait构造顺序
+  * trait与类的比较
+  * 提前定义与懒加载
+  * trait扩展类
+  * self type
+
+
 
 
 
