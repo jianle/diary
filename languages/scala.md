@@ -260,6 +260,16 @@ object demo{
   * 正则表达式
 
 
+[第十三节 高阶函数](https://yq.aliyun.com/articles/60381)
+--- 
+
+* 主要内容
+  * scala中常用高阶函数
+  * SAM转换
+  * 函数柯里化
+  * 部分应用函数
+
+
 
 
 
