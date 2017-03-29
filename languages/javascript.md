@@ -9,7 +9,7 @@ JavaScript
   * [Constructor Pattern](#constructor-pattern)
   * [Module Pattern](#the-module-pattern)
   * Revealing Module Pattern
-  * [Singleton Pattern](#The-singleton-pattern)
+  * [Singleton Pattern](#the-singleton-pattern)
   * Observer Pattern
   * Mediator Pattern
   * Prototype Pattern
